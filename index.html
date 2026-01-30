@@ -1,1 +1,200 @@
-<p>Charlie Ivins, New Portfolio website migration from google sites</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Ivin | Network Engineering & Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --card-bg: #ffffff;
+            --text-dark: #1a1a1a;
+            --accent: #2563eb;
+            --secondary: #16161a;
+            --mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: white;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .top-banner {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.85rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-banner a { color: white; font-weight: bold; }
+
+        header {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5%;
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .brand-nav {
+            position: absolute;
+            top: 80px;
+            left: 5%;
+            font-family: var(--mono);
+            font-weight: 500;
+        }
+
+        .intro-card {
+            background: var(--card-bg);
+            color: var(--text-dark);
+            max-width: 850px;
+            padding: 50px;
+            border-radius: 4px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .intro-card p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        section { padding: 80px 10%; }
+
+        .section-label {
+            font-family: var(--mono);
+            color: var(--accent);
+            display: block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+
+        h2 { font-size: 2.5rem; margin-bottom: 40px; border-left: 4px solid var(--accent); padding-left: 20px; }
+
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .edu-item {
+            background: var(--secondary);
+            padding: 30px;
+            border: 1px solid #222;
+            transition: transform 0.3s;
+        }
+
+        .edu-item:hover { transform: translateY(-5px); border-color: var(--accent); }
+
+        .edu-item h3 { color: var(--accent); margin-bottom: 15px; font-family: var(--mono); }
+
+        .edu-item p { font-size: 0.9rem; color: #ccc; }
+
+        .network-bar {
+            background: #111;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 60px;
+            border-left: 5px solid #00ff41; /* Signal Green */
+        }
+
+        footer {
+            padding: 60px 10%;
+            border-top: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--mono);
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        .contact-pill {
+            background: #222;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header { height: auto; padding: 120px 5%; }
+            .intro-card { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-banner">
+        Drop Me an email @:  <a href="mailto:ci600@cottesloe.bucks.sch.uk">ci600@cottesloe.bucks.sch.uk</a>
+    </div>
+
+    <header>
+        <div class="brand-nav">CHARLIE IVIN</div>
+        <div class="intro-card">
+            <p>Hi, I'm <strong>Charlie Ivin</strong>, an aspiring network engineer from Cheddington. I have a strong interest in<strong>UniFi network optimisation</strong> to achieve maximum performance and reliability.</p>
+            <p>I am currently developing skills in <strong>Q-SYS audio</strong>, Paxton access control, and Hikvision CCTV technologies. Outside of tech, catch me on <strong>Hyperia</strong> at Thorpe Park or baking with the Thumbs Up Friday team.</p>
+        </div>
+    </header>
+
+    <section id="education">
+        <span class="section-label">My GCSE Options at Cottesloe</span>
+        <h2>My Education:</h2>
+        <p style="margin-bottom: 40px; color: #aaa; max-width: 700px;">
+            Currently a student at <strong>The Cottesloe School</strong> (Sept 2022 – Present), studying a range of GCSEs that bridge the gap between business, technology, and creative media.
+        </p>
+
+        <div class="edu-grid">
+            <div class="edu-item">
+                <h3>Computer Science</h3>
+                <p>Focusing on programming fundamentals, algorithms, and logical problem solving. Understanding how computers and networks function at a core level.</p>
+            </div>
+            <div class="edu-item">
+                <h3>Creative iMedia</h3>
+                <p>Combining technical execution with digital design—planning and creating multimedia products including graphics, videos, and web architecture.</p>
+            </div>
+            <div class="edu-item">
+                <h3>Business</h3>
+                <p>Exploring entrepreneurship, marketing, and finance. Developing the decision-making skills required for real-world company success.</p>
+            </div>
+            <div class="edu-item">
+                <h3>Geography</h3>
+                <p>Analysing environmental challenges and global patterns. Strengthening research and critical thinking regarding human interaction with the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="networks">
+        <div class="network-bar">
+            <span class="section-label" style="color: #00ff41;">Hosting Server: ~Live~
+            </span>
+            <h2 style="border-left-color: #00ff41;">Ivin Networks</h2>
+            <p>Website Security Managed By Ivin Networks <a href="https://www.ivinnetworks.co.uk">~ Ivin Networks</a> is a group dedicated to making complex technology simple and accessible.</p>
+            <p style="margin-top: 15px;"><a href="https://www.ivinnetworks.co.uk" style="color: #00ff41; text-decoration: none; font-family: var(--mono);">[ EXPLORE IVIN NETWORKS ]</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Cheddington, UK<br>
+            &copy; 2026 Page Built, Managed & Hosted by <a href="https://jackbrown.xyz">Jack Brown</a>
+        </div>
+        <a href="mailto:ci600@cottesloe.bucks.sch.uk" class="contact-pill">Get In Touch</a>
+    </footer>
+
+</body>
+</html>
